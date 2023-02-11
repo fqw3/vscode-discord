@@ -1,0 +1,35 @@
+{
+  "name": "qw3-vscode-discord",
+  "version": "0.0.1",
+  "publisher": "qw3",
+  "description": "A Visual Studio Code extension that displays Rich Presence information in Discord.",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.showDiscordRPC"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showDiscordRPC",
+        "title": "Show Discord RPC"
+      }
+    ]
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.0"
+  },
+  "devDependencies": {
+    "vscode": "^1.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qw3/qw3-vscode-discord.git"
+  },
+  "license": "MIT"
+}
